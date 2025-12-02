@@ -1,0 +1,136 @@
+## Project Structure
+
+
+Marn-Prack-Project/
+│
+├── backend/                          # Node.js/Express Backend
+│   ├── config/
+│   │   ├── db.js                    # MongoDB connection configuration
+│   │   ├── sslcommerz.js           # SSLCommerz payment gateway config
+│   │   └── stripe.js               # Stripe config (optional)
+│   │
+│   ├── controller/
+│   │   ├── order/
+│   │   │   ├── allOrder.controller.js     # Get all orders (admin)
+│   │   │   ├── order.controller.js        # User order operations
+│   │   │   └── paymentController.js       # SSLCommerz payment handling
+│   │   │
+│   │   ├── product/
+│   │   │   ├── filterProduct.js           # Product filtering
+│   │   │   ├── getCategoryProductOne.js   # Single category products
+│   │   │   ├── getCategoryWiseProduct.js  # Category-wise products
+│   │   │   ├── getProduct.js              # Get all products
+│   │   │   ├── getProductDetails.js       # Product details
+│   │   │   ├── searchProduct.js           # Product search
+│   │   │   ├── updateProduct.js           # Update product
+│   │   │   └── uploadProduct.js           # Upload new product
+│   │   │
+│   │   └── user/
+│   │       ├── addToCartController.js      # Add to cart
+│   │       ├── addToCartViewProduct.js     # View cart items
+│   │       ├── allUsers.js                 # Get all users (admin)
+│   │       ├── countAddToCartProduct.js    # Count cart items
+│   │       ├── deleteAddToCartProduct.js   # Remove from cart
+│   │       ├── updateAddToCartProduct.js   # Update cart quantity
+│   │       ├── updateUser.js               # Update user profile
+│   │       ├── userDetails.js              # Get user details
+│   │       ├── userLogout.js               # User logout
+│   │       ├── userSignIn.js               # User login
+│   │       └── userSignUp.js               # User registration
+│   │
+│   ├── helpers/
+│   │   └── permission.js                   # User role permissions
+│   │
+│   ├── middleware/
+│   │   └── authToken.js                    # JWT authentication middleware
+│   │
+│   ├── models/
+│   │   ├── cartProduct.js                  # Cart schema/model
+│   │   ├── orderProductModel.js            # Order schema/model
+│   │   ├── productModel.js                 # Product schema/model
+│   │   └── userModel.js                    # User schema/model
+│   │
+│   ├── routes/
+│   │   └── index.js                        # All API routes
+│   │
+│   ├── .env                                # Environment variables
+│   ├── index.js                            # Main server file
+│   ├── package.json                        # Backend dependencies
+│   └── vercel.json                         # Vercel deployment config
+│
+├── frontend/                              # React.js Frontend
+│   ├── public/                            # Static files
+│   │
+│   ├── src/
+│   │   ├── assets/                        # Images, icons, etc.
+│   │   │
+│   │   ├── common/
+│   │   │   ├── index.js                   # API endpoints configuration
+│   │   │   └── role.js                    # User role constants
+│   │   │
+│   │   ├── components/
+│   │   │   ├── AdminEditProduct.js        # Admin product editing
+│   │   │   ├── AdminProductCard.js        # Product card for admin
+│   │   │   ├── BannerProduct.js           # Product banner
+│   │   │   ├── CategoryList.js            # Category listing
+│   │   │   ├── CategoryWiseProductDisplay.js # Category products display
+│   │   │   ├── ChangeUserRole.js          # Admin user role management
+│   │   │   ├── DisplayImage.js            # Image display component
+│   │   │   ├── Footer.js                  # Page footer
+│   │   │   ├── Header.js                  # Navigation header
+│   │   │   ├── HorizontalCardProduct.js   # Horizontal product card
+│   │   │   ├── Logo.js                    # Application logo
+│   │   │   ├── UploadProduct.js           # Product upload form
+│   │   │   ├── VerticalCard.js            # Vertical card layout
+│   │   │   └── VerticalCardProduct.js     # Vertical product card
+│   │   │
+│   │   ├── context/
+│   │   │   └── index.js                   # React context API
+│   │   │
+│   │   ├── helpers/
+│   │   │   ├── addToCart.js               # Cart helper functions
+│   │   │   ├── displayCurrency.js         # Currency formatting (BDT)
+│   │   │   ├── fetchCategoryWiseProduct.js # Category product fetching
+│   │   │   ├── imageTobase64.js           # Image to base64 conversion
+│   │   │   ├── productCategory.js         # Product category helpers
+│   │   │   ├── scrollTop.js               # Scroll to top helper
+│   │   │   └── uploadImage.js             # Image upload helper
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── AdminPanel.js              # Admin dashboard
+│   │   │   ├── AllOrder.js                # View all orders (admin)
+│   │   │   ├── AllProducts.js             # All products listing
+│   │   │   ├── AllUsers.js                # All users (admin)
+│   │   │   ├── Cancel.js                  # Payment cancellation page
+│   │   │   ├── Cart.js                    # Shopping cart
+│   │   │   ├── CategoryProduct.js         # Category products page
+│   │   │   ├── ForgotPassword.js          # Password recovery
+│   │   │   ├── Home.js                    # Home page
+│   │   │   ├── Login.js                   # Login page
+│   │   │   ├── OrderPage.js               # User orders page
+│   │   │   ├── ProductDetails.js          # Product details page
+│   │   │   ├── SearchProduct.js           # Search results page
+│   │   │   ├── SignUp.js                  # Registration page
+│   │   │   └── Success.js                 # Payment success page
+│   │   │
+│   │   ├── routes/
+│   │   │   └── index.js                   # React Router configuration
+│   │   │
+│   │   ├── store/
+│   │   │   ├── store.js                   # Redux store configuration
+│   │   │   └── userSlice.js               # User state management
+│   │   │
+│   │   ├── App.css                        # Main CSS styles
+│   │   ├── App.js                         # Root React component
+│   │   ├── App.test.js                    # Test file
+│   │   ├── index.css                      # Global CSS
+│   │   ├── index.js                       # React entry point
+│   │   ├── reportWebVitals.js             # Performance reporting
+│   │   └── setupTests.js                  # Test setup
+│   │
+│   ├── .env                               # Frontend environment variables
+│   ├── package.json                       # Frontend dependencies
+│   ├── tailwind.config.js                 # Tailwind CSS configuration
+│   └── ... (other config files)
+│
+└── README.md                             # This file
