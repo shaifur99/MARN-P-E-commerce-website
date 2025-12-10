@@ -1,11 +1,11 @@
-# 📋 Project Overview
+# Project Overview
 
 Marn-Prack-Project is a full-stack e-commerce application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) with integrated SSLCommerz payment gateway for Bangladesh market.
 
 
 # Key Features
 
-## 👥 User Features
+## User Features
 
 ✅ User registration and authentication
 
@@ -38,7 +38,7 @@ Marn-Prack-Project is a full-stack e-commerce application built with the MERN st
 
 
 
-## 💳 Payment System
+## Payment System
 
 ✅ SSLCommerz integration (Bangladesh)
 
@@ -52,7 +52,7 @@ Marn-Prack-Project is a full-stack e-commerce application built with the MERN st
 
 
 
-## 💳  For Demo Payment 
+## For Demo Payment 
 
 Card Number: 4111111111111111
 
@@ -114,7 +114,7 @@ npm start
 
 
 
-# 🔧 Configuration
+# Configuration
 
 SSLCommerz Configuration
 
@@ -202,7 +202,7 @@ javascript
 
 
 
-# 🔒 Security Features
+# Security Features
 
 
 JWT-based authentication
@@ -219,10 +219,10 @@ CORS configuration
 
 Environment variable management
 
-# 👥 Authors
+# Authors
 Shaifur Rahman - Initial work
 
-# 🙏 Acknowledgments
+# Acknowledgments
 
 SSLCommerz for payment gateway
 
