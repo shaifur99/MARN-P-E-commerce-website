@@ -219,16 +219,6 @@ CORS configuration
 
 Environment variable management
 
-# Authors
-Shaifur Rahman - Initial work
-
-# Acknowledgments
-
-SSLCommerz for payment gateway
-
-MongoDB Atlas for database hosting
-
-All contributors and testers
 
 # Important: Reinstall dependencies locally Since I  removed node_modules, you need to reinstall them for your project to work:
 
@@ -283,3 +273,14 @@ All contributors and testers
     
     # Check remote
     git remote -v
+
+# Authors
+Shaifur Rahman - Initial work
+
+# Acknowledgments
+
+SSLCommerz for payment gateway
+
+MongoDB Atlas for database hosting
+
+All contributors and testers
