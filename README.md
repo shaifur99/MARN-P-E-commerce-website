@@ -87,12 +87,12 @@ Prerequisites
 # Edit .env file with your configurations
 # Required variables:
 
-MONGODB_URI=your_mongodb_connection_string
-TOKEN_SECRET_KEY=your_jwt_secret_key
-FRONTEND_URL=http://localhost:3000
-BACKEND_URL=http://localhost:8080
-SSLCOMMERZ_STORE_ID=your_sslcommerz_store_id
-SSLCOMMERZ_STORE_PASSWORD=your_sslcommerz_store_password
+    MONGODB_URI=your_mongodb_connection_string
+    TOKEN_SECRET_KEY=your_jwt_secret_key
+    FRONTEND_URL=http://localhost:3000
+    BACKEND_URL=http://localhost:8080
+    SSLCOMMERZ_STORE_ID=your_sslcommerz_store_id
+    SSLCOMMERZ_STORE_PASSWORD=your_sslcommerz_store_password
 
 # Start backend server
 npm run dev
@@ -107,7 +107,7 @@ cd ../frontend
 npm install
 
 # Create .env file
-echo "REACT_APP_BACKEND_URL=http://localhost:8080" > .env
+    echo "REACT_APP_BACKEND_URL=http://localhost:8080" > .env
 
 # Start frontend development server
 npm start
